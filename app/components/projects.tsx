@@ -1,7 +1,12 @@
 "use client";
 import React from "react";
-import { Disclosure } from "@headlessui/react";
-import { HiChevronDown } from "react-icons/hi";
+import {
+  DisclosurePanel,
+  DisclosureButton,
+  Disclosure,
+} from "@headlessui/react";
+import { HiChevronDown, HiArrowRight } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -22,7 +27,14 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-gray-100 dark:bg-gray-900 px-6">
+    <motion.section
+      id="projects"
+      className="py-20 bg-gray-100 dark:bg-gray-900 px-6"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
       <h2 className="text-5xl font-bold text-center mb-10 text-gray-900 dark:text-white tracking-wide">
         Technical Projects
       </h2>
@@ -31,36 +43,51 @@ const Projects = () => {
         {projects.map((project, index) => (
           <Disclosure key={index}>
             {({ open }) => (
-              <div className="mb-3 transition-all duration-300">
-                <Disclosure.Button className="flex justify-between items-center w-full p-4 text-lg font-semibold bg-gray-700 dark:bg-gray-800 text-white cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-600">
+              // <div className="mb-3 transition-all duration-300">
+
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+              >
+                {/* <Disclosure.Button className="flex justify-between items-center w-full p-4 text-lg font-semibold bg-gray-700 dark:bg-gray-800 text-white cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-600 shadow-lg"> */}
+
+                <DisclosureButton className="flex justify-between items-center w-full p-4 text-lg font-semibold bg-gray-700 dark:bg-gray-800 text-white cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-600">
                   {project.title}
                   <HiChevronDown
                     className={`text-2xl transition-transform duration-300 ${
                       open ? "rotate-180" : "rotate-0"
                     }`}
                   />
-                </Disclosure.Button>
-
-                <Disclosure.Panel className="p-4 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-md transition-opacity duration-500">
-                  <em className="block text-sm text-gray-600 dark:text-gray-400">
-                    {project.subtitle}
-                  </em>
-                  <p className="mt-2">{project.description}</p>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-3 inline-block text-blue-500 hover:underline"
+                </DisclosureButton>
+                <DisclosurePanel className="overflow-hidden">
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
+                    className="p-4 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-md"
                   >
-                    View Project →
-                  </a>
-                </Disclosure.Panel>
-              </div>
+                    {/* Your Project Description */}
+                    <em className="block text-sm text-gray-600 dark:text-gray-400">
+                      {project.subtitle}
+                    </em>
+                    <p className="mt-2">{project.description}</p>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-3 inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 transition-all duration-300"
+                    >
+                      View Project <HiArrowRight className="text-xl" />
+                    </a>
+                  </motion.div>
+                </DisclosurePanel>
+              </motion.div>
             )}
           </Disclosure>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -36,10 +36,14 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section
+    <motion.section
+      className="py-20 bg-gray-100 dark:bg-gray-900 px-6"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
       id="experience"
       // className="py-20 bg-gray-100 dark:bg-gray-900 px-6"
-      className="py-24 px-8 lg:px-16 bg-gray-100 dark:bg-gray-900"
     >
       {/* Section Heading */}
       <motion.h2
@@ -116,7 +120,7 @@ const Experience = () => {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
-    </section>
+    </motion.section>
   );
 };
 
