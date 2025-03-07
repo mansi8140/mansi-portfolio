@@ -1,12 +1,14 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import FloatingIcons from "./floatingIcons";
 const Hero = () => {
   return (
     <section
       id="home"
       className="relative flex flex-col md:flex-row items-center justify-center min-h-screen px-6 text-center md:text-left"
     >
+      <FloatingIcons />
       {/* Profile Image with Soft Glow & Animation */}
       <motion.img
         src="/profile.png"
