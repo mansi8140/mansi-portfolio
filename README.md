@@ -1,5 +1,5 @@
 # 🚀 Mansi Patel - Portfolio Website
-Welcome to my personal portfolio website! 🎉 This project showcases my experience, skills, and projects as a Frontend Engineer.
+Welcome to my personal portfolio website! 🎉 This project showcases my experience, skills, and projects as a Software Engineer.
 
 # 🌟 Features
 **Modern UI** - Designed with a sleek and minimal aesthetic.
