@@ -26,7 +26,7 @@ const Hero = () => {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <h1 className="text-4xl tracking-wide font-[Inter]">
-          Hi, I'm Mansi Patel
+          Hi, I&apos;m Mansi Patel
         </h1>
         <p className="text-lg text-gray-400 mt-3 font-[Inter]">
           A <b>Software Engineer</b> passionate about crafting seamless user

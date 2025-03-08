@@ -1,10 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import {
-  DisclosurePanel,
-  DisclosureButton,
-  Disclosure,
-} from "@headlessui/react";
 import { HiChevronDown, HiArrowRight } from "react-icons/hi";
 import { motion } from "framer-motion";
 
@@ -72,10 +67,6 @@ const Projects = () => {
             <motion.div className="overflow-hidden">
               {openIndex === index && (
                 <motion.div
-                  // initial={{ opacity: 0, height: 0 }}
-                  // animate={{ opacity: 1, height: "auto" }}
-                  // exit={{ opacity: 0, height: 0 }}
-                  // transition={{ duration: 1, ease: "easeOut" }}
                   initial={false}
                   animate={{
                     opacity: openIndex === index ? 1 : 0,

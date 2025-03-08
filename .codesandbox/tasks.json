@@ -22,7 +22,7 @@
     },
     "build": {
       "name": "Build",
-      "command": "pnpm run build",
+      "command": "npm run build",
       "runAtStart": false
     },
     "start": {

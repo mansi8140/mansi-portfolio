@@ -8,6 +8,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { FaBriefcase } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const experiences = [
   {
@@ -59,9 +60,7 @@ const Experience = () => {
           <VerticalTimelineElement
             key={index}
             contentStyle={{
-              // background: "#1a1a2e",
               color: "#1a1a2e",
-              // color: "#fff",
               borderRadius: "8px",
               textAlign: "left",
               boxShadow: "0 4px 12px rgba(255, 102, 0, 0.2)",
@@ -94,7 +93,9 @@ const Experience = () => {
               viewport={{ once: true }}
             >
               <div className="flex items-center space-x-4">
-                <img
+                <Image
+                  width={50}
+                  height={50}
                   src={exp.logo}
                   alt={exp.company}
                   className="w-16 h-16 rounded-lg shadow-lg"
