@@ -6,17 +6,31 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "Life Insurance Management System",
-    subtitle: "Built using Angular & Spring Boot",
+    subtitle: "Angular, Spring Boot, MySQL | Jan '25",
     description:
-      "A full-stack insurance management app that allows users to compare policies, renew subscriptions, and manage accounts seamlessly.",
+      "A full-stack insurance management system with secure REST APIs, CRUD operations, and role-based dashboards.",
     link: "https://github.com/mansi8140/LIC",
   },
   {
     title: "Cloud-Based Storage Application",
-    subtitle: "Developed in Java, similar to Google Drive",
+    subtitle: "Java, Socket Programming | Feb '23 - Apr '23",
     description:
-      "A cloud storage system enabling users to upload, store, and share files securely over the internet with role-based access control.",
+      "Designed a cloud-based storage system using Java Threads, TCP, UDP, and Synchronization concepts.",
     link: "https://github.com/mansipatel/cloud-storage",
+  },
+  {
+    title: "Property Management Portal",
+    subtitle: "React.js, Laravel, MySQL, WordPress | Jul '22 - Aug '22",
+    description:
+      "Built a property management portal to track properties, sales, and revenue distribution.",
+    link: "https://github.com/mansipatel/property-portal",
+  },
+  {
+    title: "Cab Booking System",
+    subtitle: "MySQL, Python3, Java, JDBC, Oracle | Aug '22 - Dec '22",
+    description:
+      "Developed a database management system for cab bookings, with ER modeling and a Java-based GUI.",
+    link: "https://github.com/mansipatel/cab-booking",
   },
 ];
 
