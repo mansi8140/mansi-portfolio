@@ -19,18 +19,18 @@ const projects = [
     link: "https://github.com/mansipatel/cloud-storage",
   },
   {
+    title: "Cab Booking System",
+    subtitle: "MySQL, Python3, Java, JDBC, Oracle | Aug '22 - Dec '22",
+    description:
+      "A database management system developed for a cab booking company to manage and store data related to bookings, customers, drivers, cabs, and locations. The system includes customer & driver management, ride booking, pricing & payment system, and data insights for demand analysis.",
+    link: "https://github.com/mansi8140/cab_booking_system",
+  },
+  {
     title: "Property Management Portal",
     subtitle: "React.js, Laravel, MySQL, WordPress | Jul '22 - Aug '22",
     description:
       "Built a property management portal to track properties, sales, and revenue distribution.",
     link: "https://github.com/mansipatel/property-portal",
-  },
-  {
-    title: "Cab Booking System",
-    subtitle: "MySQL, Python3, Java, JDBC, Oracle | Aug '22 - Dec '22",
-    description:
-      "Developed a database management system for cab bookings, with ER modeling and a Java-based GUI.",
-    link: "https://github.com/mansipatel/cab-booking",
   },
 ];
 
