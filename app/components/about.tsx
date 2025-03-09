@@ -29,8 +29,8 @@ const About = () => {
         >
           <motion.div>
             <p className="text-lg text-gray-400 mt-3 font-[Inter]">
-              I’m <span className="font-bold text-white">Mansi Patel</span>, a
-              passionate and results-driven Software Developer dedicated to
+              I&apos;m <span className="font-bold text-white">Mansi Patel</span>
+              , a passionate and results-driven Software Developer dedicated to
               building scalable and high-performance applications that drive
               business success.
             </p>
