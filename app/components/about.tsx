@@ -35,7 +35,7 @@ const About = () => {
               business success.
             </p>
             <p className="text-lg text-gray-400 mt-3 font-[Inter] ">
-              With a Master's degree in Computer Science from the
+              With a Master&apos;s degree in Computer Science from the
               <a
                 href="https://www.uta.edu/"
                 target="_blank"
