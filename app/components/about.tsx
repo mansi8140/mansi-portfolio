@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 const About = () => {
   return (
     <motion.section
@@ -30,16 +31,39 @@ const About = () => {
           <motion.div>
             <p className="text-lg text-gray-400 mt-3 font-[Inter]">
               I’m <span className="font-bold text-white">Mansi Patel</span>, a
-              passionate Software Engineer with expertise in frontend
-              development. I love crafting seamless user experiences with{" "}
-              <strong>React, TypeScript, Angular, and Spring Boot</strong>.
+              passionate and results-driven Software Developer dedicated to
+              building scalable and high-performance applications that drive
+              business success.
+            </p>
+            <p className="text-lg text-gray-400 mt-3 font-[Inter] ">
+              With a Master's degree in Computer Science from the
+              <a
+                href="https://www.uta.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-red-400 px-1 underline"
+              >
+                University of Texas at Arlington,
+              </a>
+              I have gained valuable experience in building robust web
+              applications, optimizing performance, and solving complex software
+              challenges.{" "}
+            </p>{" "}
+            <p className="text-lg text-gray-400 mt-3 font-[Inter]">
+              At <span className="font-bold text-white">BE Networks</span>,I
+              have worked on software development, AI-powered solutions, and
+              system performance optimization, contributing to projects that
+              drive business efficiency. Previously, at{" "}
+              <span className="font-bold text-white">Moltech</span>, I was
+              involved in developing web solutions that optimized business
+              operations, implementing automation workflows, and enhancing UI/UX
+              for enterprise applications.
             </p>
             <p className="text-lg text-gray-400 mt-3 font-[Inter]">
-              I am also passionate about{" "}
-              <strong>Data Structures & Algorithms</strong>, building scalable
-              applications, and continuously refining my problem-solving skills.
-              Writing <em>clean, efficient, and optimized code</em> is my
-              mantra!
+              I am committed to continuous learning, exploring new technologies,
+              and improving existing systems to create meaningful and impactful
+              digital experiences. Writing{" "}
+              <em>clean, efficient, and optimized code</em> is my mantra!
             </p>
           </motion.div>
 
@@ -47,12 +71,22 @@ const About = () => {
             <h3 className="text-xl font-semibold mb-4">Tech Stack</h3>
             <div className="flex flex-wrap gap-3">
               {[
+                "HTML",
                 "JavaScript",
-                "React",
-                "Angular",
                 "TypeScript",
+                "Java",
+                "React",
+                "Next.js",
+                "Angular",
+                "Framer Motion",
                 "Spring Boot",
+                "NestJs",
                 "Tailwind CSS",
+                "SCSS",
+                "MYSQL",
+                "MongoDB",
+                "Git",
+                "Tortoise",
                 "Data Structures",
                 "Algorithms",
               ].map((skill) => (
