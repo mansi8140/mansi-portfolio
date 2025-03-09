@@ -13,23 +13,35 @@ import Image from "next/image";
 const experiences = [
   {
     role: "Software Engineer",
-    company: "Be Networks, Richardson, TX",
-    duration: "September,2023 - Present",
+    company: "BE Networks, Richardson, TX",
+    duration: "January 2024 - Present",
     details: [
-      "Developed highly responsive UI components in React and TypeScript.",
-      "Optimized performance, reducing load times by 30%.",
-      "Integrated third-party APIs for seamless financial transactions.",
+      "Developed scalable applications using JavaScript, TypeScript, and NestJS for microservices, optimizing RESTful API performance.",
+      "Integrated LangChain AI framework to enhance chatbot capabilities, improving user interactions with prompt engineering.",
+      "Refactored system architecture, improving UI performance with CSS optimizations and state management.",
+      "Designed & executed manual & automated test cases with Jest, reducing critical bugs by 25% and ensuring 99% uptime.",
+      "Collaborated cross-functionally in Agile teams, delivering secure and high-performing software solutions.",
     ],
-    logo: "/be-networks.png", // ✅ Ensure these are placed inside /public
+    logo: "/be-networks.png",
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "BE Networks, Richardson, TX",
+    duration: "September 2023 - December 2023",
+    details: [
+      "Designed and optimized UI for SD-LAN solutions, leveraging JavaScript, HTML, and CSS to enhance user experience.",
+      "Refactored and optimized codebases with senior developers, leading to a 15% performance improvement and 10% lower maintenance costs.",
+    ],
+    logo: "/be-networks.png",
   },
   {
     role: "Software Developer",
     company: "Moltech Solutions, Ahmedabad, India",
-    duration: "April, 2021 - December,2021",
+    duration: "April 2021 - December 2021",
     details: [
-      "Built an insurance management system using Angular and Spring Boot.",
-      "Created dynamic dashboards for agents and admins.",
-      "Integrated payment gateways and policy comparison tools.",
+      "Developed and deployed five web and mobile applications using React.js, React Native, Bootstrap, and Figma, improving UI by 35%, while independently designing, developing, and testing a mobile app with React Native and Figma.",
+      "Optimized performance and deployment by enhancing SEO, implementing CI/CD, improving page load speeds by 15%, reducing downtime by 40%, and revamping web designs using reusable components, prototyping, and WordPress.",
+      "Accelerated development cycles and improved UI/UX by implementing reusable components, UI prototyping, and performance tuning, reducing design iteration time by 50% and enhancing feature rollout speed with CI/CD",
     ],
     logo: "/moltech.png",
   },
@@ -38,7 +50,7 @@ const experiences = [
 const Experience = () => {
   return (
     <motion.section
-      className="py-20 bg-gray-100 bg-gray-900 px-6"
+      className="py-20 bg-gray-900 px-6"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -46,7 +58,7 @@ const Experience = () => {
       id="experience"
     >
       <motion.h2
-        className="text-3xl font-semibold text-center mb-10 text-gray-900 text-white tracking-wide"
+        className="text-3xl font-semibold text-center mb-10 text-white tracking-wide"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -60,14 +72,15 @@ const Experience = () => {
           <VerticalTimelineElement
             key={index}
             contentStyle={{
+              background: "#fff",
               color: "#1a1a2e",
               borderRadius: "8px",
               textAlign: "left",
               boxShadow: "0 4px 12px rgba(255, 102, 0, 0.2)",
             }}
             contentArrowStyle={{ borderRight: "7px solid #1a1a2e" }}
-            dateClassName="text-white	"
             date={exp.duration}
+            dateClassName="text-white"
             icon={
               <motion.div
                 animate={{ y: [0, -3, 0] }}
@@ -101,14 +114,16 @@ const Experience = () => {
                   className="w-16 h-16 rounded-lg shadow-lg"
                 />
                 <div>
-                  <h3 className="text-2xl font-semibold ">{exp.role}</h3>
+                  <h3 className="text-2xl font-semibold">{exp.role}</h3>
                   <h4 className="text-lg font-light">{exp.company}</h4>
-                  <h2></h2>
+                  <h5 className="lg:hidden xl:hidden 2xl:hidden text-orange-400">
+                    {exp.duration}
+                  </h5>
                 </div>
               </div>
 
               {/* Experience Details */}
-              <ul className="mt-3 list-disc list-inside ">
+              <ul className="mt-3 list-disc list-inside text-gary-500">
                 {exp.details.map((detail, i) => (
                   <li key={i}>{detail}</li>
                 ))}

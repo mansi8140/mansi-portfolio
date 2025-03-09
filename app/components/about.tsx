@@ -79,6 +79,7 @@ const About = () => {
                 "Next.js",
                 "Angular",
                 "Framer Motion",
+                "API",
                 "Spring Boot",
                 "NestJs",
                 "Tailwind CSS",
