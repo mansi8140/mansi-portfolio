@@ -11,9 +11,9 @@ const Hero = () => {
       <FloatingIcons />
       {/* Profile Image with Soft Glow & Animation */}
       <motion.img
-        src="/profile.png"
+        src="/profile.jpeg"
         alt="Mansi Patel"
-        className="w-72 h-72 rounded-full shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-[0px_0px_50px_rgba(255,165,0,0.4)] md:mr-10"
+        className="w-80 h-80 rounded-full shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-[0px_0px_50px_rgba(255,165,0,0.4)] md:mr-10"
         initial={{ opacity: 0, scale: 1, y: 2 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 5, ease: "easeOut", delay: 0.2 }}
@@ -29,13 +29,11 @@ const Hero = () => {
           Hi, I&apos;m Mansi Patel
         </h1>
         <p className="text-lg text-gray-400 mt-3 font-[Inter]">
-          A <b>Software Engineer</b> passionate about crafting seamless user
-          experiences with <b>React, TypeScript, </b>
-          and <b>modern UI frameworks.</b>
+        Building Engaging, Scalable, and High-Impact Web Applications That Redefine Digital Experiences.
         </p>
         {/* Download Resume Button */}
         <a
-          href="/resume.pdf"
+          href="/Mansi_Patel_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 inline-block border-2 border-orange-500 text-orange-500 px-6 py-3 text-lg font-semibold uppercase tracking-wider rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300 hover:shadow-lg hover:scale-105 font-[Inter]"

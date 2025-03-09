@@ -6,6 +6,7 @@ import Experience from "./components/experince";
 import Contact from "./components/contact";
 import Hero from "./components/hero";
 import About from "./components/about";
+import Footer from "./components/footer";
 export default function Home() {
   return (
     <div>
@@ -15,6 +16,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }

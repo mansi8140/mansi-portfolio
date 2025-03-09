@@ -32,9 +32,16 @@ section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-/* globals.css */
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
 }
