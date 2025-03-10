@@ -26,3 +26,10 @@ Welcome to my personal portfolio website! 🎉 This project showcases my experie
 
 # 🌍 Check out my live portfolio
 https://mansipatel.dev/
+
+
+## 📜 Contribution Guidelines
+🔒 **This repository is read-only for external users**. If you want to contribute:
+1. **Fork the repository**.
+2. Make changes in your **own branch**.
+3. Open a **pull request** for review.
