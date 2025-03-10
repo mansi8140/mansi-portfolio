@@ -16,7 +16,7 @@ const projects = [
     subtitle: "Java, Socket Programming | Feb '23 - Apr '23",
     description:
       "Designed a cloud-based storage system using Java Threads, TCP, UDP, and Synchronization concepts.",
-    link: "https://github.com/mansipatel/cloud-storage",
+    link: "https://github.com/mansi8140/cloud-storage-app",
   },
   {
     title: "Cab Booking System",
