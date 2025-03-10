@@ -30,7 +30,7 @@ const projects = [
     subtitle: "React.js, Laravel, MySQL, WordPress | Jul '22 - Aug '22",
     description:
       "Built a property management portal to track properties, sales, and revenue distribution.",
-    link: "https://github.com/mansipatel/property-portal",
+    link: "https://github.com/mansi8140/property-management-portal",
   },
 ];
 
