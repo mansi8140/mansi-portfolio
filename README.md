@@ -1,6 +1,10 @@
 # 🚀 Mansi Patel - Portfolio Website
 Welcome to my personal portfolio website! 🎉 This project showcases my experience, skills, and projects as a Software Engineer.
 
+🔗 **Live Website**: [mansipatel.dev](https://mansipatel.dev)  
+💻 **Edit & Preview in CodeSandbox**: [View on CodeSandbox](https://codesandbox.io/p/github/mansi8140/mansi-portfolio/main?workspaceId=ws_6L3EZdDTCpWx8oCcsTs1x7)
+
+---
 # 🌟 Features
 **Modern UI** - Designed with a sleek and minimal aesthetic.
 
