@@ -16,7 +16,7 @@ const experiences = [
     company: "BE Networks, Richardson, TX",
     duration: "January 2024 - Present",
     details: [
-      "Migrating a legacy JavaScript codebase to ReactJS, using TanStack for state management, data handling, and routing, and Mantine for UI component design — resulting in a more modular, performant, and maintainable frontend architecture.",
+      "Migrating a legacy JavaScript codebase to ReactJS, using Redux for state management, TanStack Router for routing, TanStack Query for data handling, and Mantine for UI component design — resulting in a more modular, performant, and maintainable frontend architecture.",
       "Engineered a scalable front-end application using JavaScript and TypeScript, leveraging NestJS to build microservices and RESTful APIs.",
       "Designed and developed a NestJS-based microservice middleware connecting the GUI layer to a Prompt Service, enabling seamless end-to-end (E2E) communication across AI-driven components.",
       "Implemented NestJS interceptors for logging, response transformation, and error handling, improving observability and ensuring consistent API responses.",
